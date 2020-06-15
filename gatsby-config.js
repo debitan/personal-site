@@ -4,7 +4,44 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    // Used for the title template on pages other than the index site
+    siteTitle: `David Matthews - Full Stack Developer & Engineering Manager`,
+    // Default title of the page
+    siteTitleAlt: `David Matthews - Full Stack Developer & Engineering Manager`,
+    // Can be used for e.g. JSONLD
+    siteHeadline: `David Matthews - Full Stack Developer & Engineering Manager`,
+    // Will be used to generate absolute URLs for og:image etc.
+    siteUrl: `https://debitan.dev`,
+    // Used for SEO
+    siteDescription: `The blog and personal site of David Matthews - Full Stack Developer & Engineering Manager`,
+    // Will be set on the <html /> tag
+    siteLanguage: `en`,
+    // Used for og:image and must be placed inside the `static` folder
+    siteImage: `/favicon.png`,
+    // Twitter Handle
+    author: `@ThisIsDMatthews`,
+    // Links displayed in the header on the right side
+    externalLinks: [
+      {
+        name: `GitHub`,
+        url: `https://github.com/debitan`,
+      },
+      {
+        name: `Twitter`,
+        url: `https://twitter.com/ThisIsDMatthews`,
+      },
+      {
+        name: `LinkedIn`,
+        url: `https://www.linkedin.com/in/d-matthews/`,
+      },
+    ],
+    // Navigation links
+    navigation: [
+      {
+        title: `Blog`,
+        slug: `/blog`,
+      },
+    ],
   },
   plugins: [
     {
@@ -23,12 +60,16 @@ module.exports = {
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            name: `GitHub`,
+            url: `https://github.com/debitan`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `Twitter`,
+            url: `https://twitter.com/ThisIsDMatthews`,
+          },
+          {
+            name: `LinkedIn`,
+            url: `https://www.linkedin.com/in/d-matthews/`,
           },
         ],
       },
