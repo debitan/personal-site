@@ -82,5 +82,11 @@ module.exports = {
     },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-social-cards`],
+      },
+    },
   ],
 }
