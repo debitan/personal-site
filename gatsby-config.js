@@ -17,7 +17,7 @@ module.exports = {
     // Will be set on the <html /> tag
     siteLanguage: `en`,
     // Used for og:image and must be placed inside the `static` folder
-    siteImage: `/favicon.svg`,
+    siteImage: `/favicon.png`,
     // Twitter Handle
     author: `@ThisIsDMatthews`,
     // Links displayed in the header on the right side
